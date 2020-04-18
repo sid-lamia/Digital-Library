@@ -1,0 +1,552 @@
+h1{
+	height: 120px;
+	width: 100%;
+	background: #86B3D1;
+	color: white;
+	margin: 0;
+
+	text-align: center;
+	font-size: 40px;
+	font-family: Arial;
+	line-height: 120px;
+}
+
+body{
+	background: white;
+	margin: 0;
+	font-family: Arial;
+}
+
+#headingtext{
+	text-decoration: none;
+	font-family: 'Calligraffitti';
+	font-size: 60px; 
+	color: white;
+}
+#backgroundimage{
+	width: 100%;
+	height:500px;
+	z-index: -1;
+}
+#aboutText{
+	margin: 40px 3% 0% 3%;
+	color: #EDB5BF;
+}
+#advsearchtext{
+	font-size: 18px;
+	margin: 5px 0% 10px 10%;
+	text-decoration: none;
+}
+#advsearchtext:hover{
+	text-decoration: underline;
+}
+
+#showallbookstext{
+	font-size: 18px;
+	margin: 5px 0% 10px 5%;
+	text-decoration: none;
+}
+#showallbookstext:hover{
+	text-decoration: underline;
+}
+#entertext{
+	color:white;
+	text-decoration: none;
+}
+#options{
+	width: 50%;
+	height: 100%;
+	background: 66B2FF;
+	color: white;
+	float: right;
+}
+#loginbutton{
+	height: 30px;
+	width: 70px;
+	margin: 30px 9% 10px 9%;
+}
+
+#loginform{
+	height: 500px;
+	width: 90%;
+	background: #9FAAB2 ;
+	margin: 0px 5% 100px 5%;
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+#addbookform{
+	height: 100%;
+	width: 90%;
+	background: #9FAAB2 ;
+	padding-top: 20px;
+	margin: 30px 15% 100px -5%;
+}
+#addbookbtn{
+	width: 20%;
+	height: 30px;
+	margin: 25px 9% 10px 9%;
+}
+#logreg{
+	background: #86B3D1;
+	height: 50px;
+	width: = 90%;
+	margin: 50px 5% 0 5%;
+	color: white;
+}
+#register{
+	float: right;
+	margin: 65px;
+	font-size: 20px;
+}
+#searchblock{
+	height: 200px;
+	width: 70%;
+	margin: 20px 15%;
+	background: white;
+	border: 1px solid lightgray;
+}
+#searchbutton{
+	height: 30px;
+	width: 10%;
+	float: right;
+	margin: -4px 7.9% 30px 10%;
+}
+#dashboard{
+	float: right;
+	margin: 50px;
+	font-size: 20px;
+}
+
+#advsearchbar{
+	width: 70%;
+	height: 30px;
+	float: right;
+	padding: 5px 10px;
+
+}
+#advsearchbutton{
+	height: 30px;
+	width: 10%;
+	float: right;
+	margin-top: 20px;
+	margin-left: 300px;
+}
+#menucontent{
+	width: 260px;
+	display: none;
+	position: absolute;
+	background-color: white;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	right: 0px;
+	z-index: 1;
+}
+#menuoptions{
+	display: inline-block;
+}
+
+#menuoptions:hover #menucontent {
+  display: block;
+}
+#dropdowncontent{
+	display: none;
+	position: absolute;
+	background-color: white;
+	border: 1px solid black;
+	min-width: 160px;
+	z-index: 1;
+}
+@media all and (max-width: 1015px){
+	#menucontent{
+		right: 0px !important;
+	}
+}
+#dropdownoptions{
+	display: inline-block;
+}
+#dropdownoptions:hover #dropdowncontent{
+	display: block;
+}
+#advsearchcontent{
+	display: none;
+	position: absolute;
+	background-color: #9FAAB2;
+	min-width: 200px;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	z-index: 1;
+}
+#advsearchopt{
+	display: inline-block;
+}
+#advsearchopt:hover #advsearchcontent{
+  display: block;
+}
+
+#reservemodal{
+	border-radius: 5px; 
+
+}
+#close{
+	float:right;
+	width: 10%;
+	height: 25px;
+	text-align: center;
+	overflow: hidden;	
+}
+#buttoncontainer{
+	width: 80px;
+	height: 30px;
+	float: right;
+	margin-top: 30px;
+	margin-right: 15%;
+	
+}
+@media all and (max-width: 1200px){
+	.searchresultblock{
+		margin: 10px 0% !important;
+		width: 100% !important;
+	}
+	.bookopt{
+		margin-right:1% !important;
+	}
+	.container{
+		margin-left: 0% !important;
+		margin-right: 0% !important;
+		width: 100% !important;
+	}
+}
+@media all and (max-width: 800px){
+	.reserve{
+		width: 40px !important;
+		height:40px !important; 
+	}
+}
+.homesubsection{
+	height: 600px;
+	width: 50%;
+	margin: 10px 25% 10px 25%
+}
+.optiontext{
+	font-size: 20px;
+	font-weight: bold;
+	color: #4D6D9A;
+	text-decoration:none;
+}
+.profiletext{	
+	font-size: 16px;
+	font-weight: bold;
+	color: black;
+	display: block;
+	line-height: 2.0;
+	border-right: 1px solid darkgray;
+	border-left: 1px solid darkgray;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding: 10px;
+}
+.profiletextinfo{
+	font-size: 16px;
+	color: black;
+	display: block;
+	line-height: 2.0;
+	border-right: 1px solid darkgray;
+	border-left: 1px solid darkgray;
+	border-top: 1px solid darkgray;
+	border-bottom: 1px solid darkgray;
+	margin-top:0px;
+	margin-bottom:0px;
+	padding: 10px;
+}
+.profiletextimp{
+	font-size: 16px;
+	font-weight: bold;
+	color: red;
+	display: block;
+	line-height: 2.0;
+}
+.dropLink{
+	display:block;
+	position: relative;	
+	width:100%;
+	height:70px;
+	padding-bottom: 45px;
+}
+.dropLink2{
+	display:block;
+	position: relative;	
+	width:100%;
+	height:70px;
+	padding-top: 15px;
+
+}
+.dropLink:hover{
+	background: #FFEDF0;
+}
+.dropLink2:hover{
+	background: #FFEDF0;
+}
+.dropdownbtn{
+	border-radius: 5px;
+	height: 40px;
+	width: 16%;
+	float: left;
+	cursor: pointer;
+	overflow: hidden;
+	background: #86B3D1;
+	color: white;
+	text-align: center;
+	border: 1px solid darkgray;
+	line-height: 2.5;
+}
+.dropdownbtn:hover{
+	background: lightgray;
+}
+.menubutton{
+	height: 100%;
+	float:right;
+	width:10%;
+	text-align: center;
+	cursor: pointer;
+	overflow: hidden;
+}
+.menubutton:hover{
+	background: #90B0F0;
+}
+.lr{
+	display: inline;
+	width: 50%; 
+	height: 50px; 
+	float: left;
+	text-align: center;
+	line-height: 3;
+}
+.lr:hover{ 
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.highlighted{
+	background: #4D6D9A;
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.forminput{
+	border-radius: 3px;
+	width: 80%;
+	height: 25px;
+	margin: 22px 9% 5px 9%;
+	border: 1px solid darkgray;
+	padding: 5px 10px;
+}
+.forminput:hover{
+	box-shadow:  4px 6px 8px #C0D5E3 inset;
+}
+
+.searchbar{
+	width: 80%;
+	height: 30px;
+	margin: 50px 8% 30px 10%;
+	padding: 5px 10px;
+
+}
+.submitbutton{
+	border-radius: 5px;
+	background: #EDB5BF;
+	color: white;
+	text-align: center;
+	line-height: 2;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+
+}
+.submitbutton:hover{ 
+	border: 2px solid lightgray;
+}
+.container{
+	width: 80%;
+	height: 700px;
+	margin: 50px 10% 50px 10%;
+}
+.box1{
+	width: 15%;
+	display: inline;
+	float:left;
+	margin-top: 35px;
+	background: #EDEFEF;
+	min-width: 100px;
+}
+.box2{
+	width: 35%;
+	display: inline;
+	float:left;
+	margin-top: 35px;
+	min-width: 320px;
+
+}
+.box3{
+	width: 100%;
+	height: 150px;
+	float: left;
+	display: block;
+	margin-top: 20px;
+}
+.box4{
+	width: 35%;
+	display: inline;
+	float:left;
+	background: #EDEFEF;
+	min-width: 162px !important;
+}
+.box5{
+	width: 60%;
+	height: 150px;
+	float: left;
+	display: block;
+	min-width: 150px;
+}
+
+.imagesize{
+	width: 300px;
+	height:300px;
+	float: left;
+	margin: 20px 15% 0px 25%;
+	display: block;
+}
+.bookimagesize{
+	width: 350px;
+	height:500px;
+	margin-left: 0%;
+	margin-right: 8%;
+	float: left;
+}
+.searchresultblock{
+	width: 70%;
+	height: 200px;
+	border: 1px solid lightgray;
+	background: white;
+	margin: 10px 15%;
+}
+.searchresultblock:hover{
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.bookthumbnail{
+	width: 140px;
+	height: 180px;
+	margin: 10px 20px 10px 20px;
+	display: inline;
+	float: left;
+	
+}
+.bookdetails{
+	display: inline;
+	float: left;
+	margin-left: 10px;
+	margin-top: 20px;
+}
+.bookopt{
+	height: 50%;
+	width: 10%;
+	float: right;
+	margin-top: 25px;
+	margin-right: 15%;
+}
+.details{
+	border-radius: 5px;
+	height: 30px;
+	width: 80px;
+	margin-bottom: 20px;
+	background: #EDB5BF;
+	text-align: center;
+	line-height: 1.5;
+	color: white;
+}
+
+.reserve{
+	border-radius: 5px;
+	height: 30px;
+	width: 80px;
+	margin-top: 10px;
+	background: #EDB5BF;
+	text-align: center;
+	line-height: 1.5;
+	color: white;
+	margin-bottom: 5px;
+}
+.reserve:hover{
+	box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+.modal{
+	display: none;
+	position: fixed;
+    z-index: 1;
+    padding-top: 300px; /*check this again*/
+    left: 0;
+    top: 0;
+	width: 100%;
+	height: 100%;
+    overflow: auto;
+}
+.modal-content {
+  border-radius: 5px; 
+  background-color: #fefefe;
+  margin: auto;
+  border: 2px solid #4D6D9A;
+  box-shadow:0px 8px 16px 0px rgba(0,0,0,0.2);
+  width: 30%;
+  height: 200px;
+  padding: 5px 5px 0px 5px;
+
+}
+
+.modalSection{
+	line-height: 25px;
+	width: 49%;
+	float: left;
+	height: 25px;
+	text-align: center;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+.modaltext{
+	margin-top: 50px;         
+	text-align: center;
+}
+.modaltextwithoutbtn{
+	margin-top: 80px;
+	margin-left: 0%;
+	text-align: center;
+}
+.yesbutton{
+	border-radius: 5px;
+	width: 15%;
+	height: 30px;
+	display: inline;
+	margin: 25px 10% 25px 24% ;
+}
+
+.yesbutton:hover{
+	background: #14CD49;
+}
+
+.yesbuttonform{
+	width: 10px;
+	height: 10px;
+}
+
+.nobutton{
+	border-radius: 5px;
+	display: inline;
+	width: 15%;
+	height: 30px;
+	margin: 25px 24% 25px 10%;
+}
+.nobutton:hover{
+	background: #D62424;
+}
+.closeiconstyle{
+	font-size:25px;
+	color: red;
+}
+.menuicon{
+	margin-right: 15px;
+}
+	
